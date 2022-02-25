@@ -6,6 +6,8 @@ let currentRoundNumber = 1;
 
 const generateTarget = () => Math.floor(Math.random() * 10);
 
+// returns 'true' if user guess is closer to target than computer
+// guess and 'false' for the reverse situation
 const compareGuesses = (userGuess, computerGuess, target) => {
   if (Math.abs(target - userGuess) <= Math.abs(target - computerGuess)) {
     return true;
